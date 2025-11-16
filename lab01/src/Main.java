@@ -1,57 +1,42 @@
-import java.util.Random;
-public class Main {
-    public static int zad1(int n){
-        int p=0;
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+void main() {
+    //Zad1
+    System.out.println(Zad1_10.zad1(20));
 
-        for(int i=1;i<n;i++){
-            int t=0;
-            for(int j=1;j<=i;j++){
-                if(i%j==0){
-                    t++;
-                }
-            }
-            if(t==2){
-                p=i;
-            }
-        }
+    //Zad2
+    System.out.println(Zad1_10.zad2(2));
 
-        return p;
-    }
+    //zad3
+    System.out.println(Zad1_10.generateRandomIntInRange(2,8));
 
-    public static double zad2(int n){
-        double p=1;
-        for(int i=0;i<n;i++){
-               p*=7;
-        }
+    //zad4
+    Zad1_10.zad4();
 
-        return 1/p;
-    }
-    public static int generateRandomIntInRange(int a, int b){
-        Random rand = new Random();
-        return rand.nextInt(a,b+1);
-    }
+    //zad5
+    Zad1_10.zad5();
 
-    public static double zad4(int n){
-        Random rand = new Random();
-        double[] tab = new double[n];
-        double s=0;
+    //zad6
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(10);
+    list.add(1);
+    list.add(5);
+    list.add(354);
+    list.add(103);
+    System.out.println(Zad1_10.minimumValue(list));
 
-        for(int i=0;i<n;i++){
-            tab[i] = rand.nextInt(1,101);
-            s+=tab[i];
-        }
+    //zad7
+    ArrayList<Integer> list2 = new ArrayList<>();
+    list2.add(1);
+    list2.add(2);
+    list2.add(3);
+    list2.add(4);
+    list2.add(5);
+    System.out.println(Zad1_10.reverseArray(list2));
 
-        return s/20;
-    }
+    //zad8
+    System.out.println(Zad1_10.zad8("Witam"));
 
-    public static void main(String[] args) {
-        //zad1
-        System.out.println(zad1(10));
-        //zad2
-        System.out.println(zad2(2));
-        //zad3
-        System.out.println(generateRandomIntInRange(5,20));
-        //zad4
-        System.out.println(zad4(20));
-    }
+    //zad9
+    Zad1_10.zad9('*',3);
 }
