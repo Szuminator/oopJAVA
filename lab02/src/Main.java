@@ -47,6 +47,6 @@ public class Main {
         //Klasa Kalkulator
 
         //zad10
-        
+        //Klasy: Person10, TestPerson, 
     }
 }
