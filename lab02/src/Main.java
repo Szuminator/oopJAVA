@@ -42,5 +42,11 @@ public class Main {
         //zad8
         Osoba o1 = Osoba.create("Andrzej", "Wajda");
         System.out.println("\n"+o1.surname +" "+ o1.name);
+
+        //zad9
+        //Klasa Kalkulator
+
+        //zad10
+        
     }
 }
